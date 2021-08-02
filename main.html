@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> Welcome to 2077! </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function hello() {
+                console.log(innerWidth);
+            }
+            
+        </script>
+        <style>
+            body {background-color: black; color:white}
+            h1 {color:white ; font-size: 5vw; text-align: center;}
+            li {display: inline; padding-top: 0.2vw; margin-top: 1vw;} 
+            a {background-color: white; color:black; padding: 1vw;}
+            a:hover{background-color: grey;}  
+            p{color:black}
+            #small {display: none}
+            img{width:100%; height: 85%;}
+            #one , #two , #thr {font-size: 3vw;}
+            #one {color:yellow; font-family:'Brush Script MT';}
+            #two {color:rgb(30, 156, 202); font-family:Arial;}
+            #thr {color:lightcoral; font-family:'Copperplate';}
+
+            @media screen and (max-width: 800px) {
+                 #big{display:none}
+                 #small{display: block}  
+                 .left, .right, .center , .home{width:100%; padding:1vw; background-color: white; color:black; text-align: center;}
+                 .left:hover, .right:hover, .center:hover, .home:hover{background-color: grey; cursor: pointer;}
+                  a{width:100%}
+                  #one , #two , #thr {font-size: 4vw;}
+                  p{display:none}
+            } 
+        </style>
+    </head>
+    <body>
+        <p>  . </p>
+
+        <ul id="big">
+            <li><a href = "history.html"> History </a></li>
+            <li><a href = "mercury.html"> Mercury </a></li>
+            <li><a href = "venus.html"> Venus </a></li>
+            <li> <a href = "main.html"> Homepage </a></li>
+        </ul>
+        <div id = "small">
+            <div class = "left"> <a href = "history.html"> History </a></div>
+            <div class = "center"> <a href = "mercury.html"> Mercury </a> </div>
+            <div class = "right"> <a href = "venus.html"> Venus </a> </div>
+            <div class = "home"> <a href = "main.html"> Homepage </a></div>
+        </div>
+        <h1> Welcome to the future! </h1> 
+        <img src = "Untitled.jpg"> 
+        <span id = "one"> Style </span>
+        <span id = "two"> <b><i> Your </b></i></span>
+        <span id = "thr"> Introduction </span>
+       
+    </body>
+</html>
